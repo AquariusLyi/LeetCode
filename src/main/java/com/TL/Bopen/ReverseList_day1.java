@@ -36,25 +36,9 @@ public class ReverseList_day1 {
         ListNode node_1 = recursion(node1); System.out.println(node_1);
     }
 
-    /**
-     * https://leetcode-cn.com/problems/reverse-linked-list/solution/shi-pin-jiang-jie-die-dai-he-di-gui-hen-hswxy/
-     * 视频讲解反转
-     */
-
-    public ListNode reverseList(ListNode head) {
-        ListNode prev = null;
-        ListNode curr = head;
-        while (curr != null) {
-            ListNode next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
-        }
-        return prev;
-    }
 
     /**
-     * TL 解法1 迭代
+     * TL 韩非讲解：解法1 迭代
      */
     public static ListNode iterate(ListNode head) {
         ListNode prev = null, curr, next;
@@ -69,7 +53,7 @@ public class ReverseList_day1 {
     }
 
     /**
-     * TL 解法2 递归
+     * TL 韩非讲解：解法2 递归
      */
     public static ListNode recursion(ListNode head) {
         if (head == null || head.next == null) {

@@ -10,21 +10,6 @@ import java.util.stream.Collectors;
  */
 public class TestList {
 
-    /**
-     * 3 个张三，2 个李强
-     */
-    public List<String> initList = Arrays.asList(
-            "张三",
-            "李四",
-            "张三",
-            "周一",
-            "刘四",
-            "李强",
-            "李白",
-            "张三",
-            "李强",
-            "王五"
-    );
 
     /**
      * for 循环添加去重
@@ -96,7 +81,21 @@ public class TestList {
     }
 
 
-
+    /**
+     * 3 个张三，2 个李强
+     */
+    public List<String> initList = Arrays.asList(
+            "张三",
+            "李四",
+            "张三",
+            "周一",
+            "刘四",
+            "李强",
+            "李白",
+            "张三",
+            "李强",
+            "王五"
+    );
     /**
      * Stream 去重
      * @author: 蜗牛

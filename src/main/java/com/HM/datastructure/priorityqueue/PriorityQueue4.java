@@ -1,6 +1,6 @@
 package com.HM.datastructure.priorityqueue;
 
-import com.itheima.datastructure.queue.Queue;
+import com.HM.datastructure.queue.Queue;
 
 /**
  * 基于<b>大顶堆</b>实现

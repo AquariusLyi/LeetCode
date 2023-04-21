@@ -1,6 +1,7 @@
 package com.HM.datastructure.stack;
 
-import com.itheima.datastructure.queue.ArrayQueue3;
+
+import com.HM.datastructure.queue.ArrayQueue3;
 
 /**
  * 单队列模拟栈

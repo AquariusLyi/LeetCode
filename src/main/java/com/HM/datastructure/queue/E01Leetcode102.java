@@ -1,6 +1,6 @@
 package com.HM.datastructure.queue;
 
-import com.itheima.datastructure.binarytree.TreeNode;
+import com.HM.datastructure.binarytree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

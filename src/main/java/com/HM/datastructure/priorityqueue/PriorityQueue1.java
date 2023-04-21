@@ -1,6 +1,6 @@
 package com.HM.datastructure.priorityqueue;
 
-import com.itheima.datastructure.queue.Queue;
+import com.HM.datastructure.queue.Queue;
 
 /**
  * 基于<b>无序数组</b>实现

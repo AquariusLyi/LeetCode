@@ -1,6 +1,6 @@
 package com.HM.datastructure.priorityqueue;
 
-import com.itheima.datastructure.linkedlist.ListNode;
+import com.HM.datastructure.linkedlist.ListNode;
 
 /**
  * <b>小顶堆</b>

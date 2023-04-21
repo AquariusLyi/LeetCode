@@ -1,7 +1,7 @@
 package com.HM.datastructure.deque;
 
-import com.itheima.datastructure.binarytree.TreeNode;
-import com.itheima.datastructure.queue.LinkedListQueue;
+import com.HM.datastructure.binarytree.TreeNode;
+import com.HM.datastructure.queue.LinkedListQueue;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

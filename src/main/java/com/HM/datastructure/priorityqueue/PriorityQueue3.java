@@ -1,6 +1,6 @@
 package com.HM.datastructure.priorityqueue;
 
-import com.itheima.datastructure.queue.Queue;
+import com.HM.datastructure.queue.Queue;
 
 import java.util.Arrays;
 

@@ -28,37 +28,37 @@ public class Ex2Fibonacci {
         stack.push(new Frame<>(n, 0, 4));
         while (!stack.isEmpty()) {
             Frame<Integer> curr = stack.peek();
-            switch (curr.branch) {
-                case 0 -> {
-                    if (curr.n == 0) {
-                        curr.result = 0;
-                        curr.branch = curr.returnBranch;
-                    } else if (curr.n == 1) {
-                        curr.result = 1;
-                        curr.branch = curr.returnBranch;
-                    } else {
-                        curr.branch = 1;
-                    }
-                }
-                case 1 -> {
-                    stack.push(new Frame<>(curr.n - 1, 0, 2));
-                }
-                case 2 -> {
-                    Frame<Integer> x = stack.pop();
-                    Frame<Integer> prev = stack.peek();
-                    prev.x = x.result;
-                    stack.push(new Frame<>(prev.n - 2, 0, 3));
-                }
-                case 3 -> {
-                    Frame<Integer> y = stack.pop();
-                    Frame<Integer> prev = stack.peek();
-                    prev.result = prev.x + y.result;
-                    prev.branch = prev.returnBranch;
-                }
-                case 4 -> {
-                    return curr.result;
-                }
-            }
+//            switch (curr.branch) {
+//                case 0 -> {
+//                    if (curr.n == 0) {
+//                        curr.result = 0;
+//                        curr.branch = curr.returnBranch;
+//                    } else if (curr.n == 1) {
+//                        curr.result = 1;
+//                        curr.branch = curr.returnBranch;
+//                    } else {
+//                        curr.branch = 1;
+//                    }
+//                }
+//                case 1 -> {
+//                    stack.push(new Frame<>(curr.n - 1, 0, 2));
+//                }
+//                case 2 -> {
+//                    Frame<Integer> x = stack.pop();
+//                    Frame<Integer> prev = stack.peek();
+//                    prev.x = x.result;
+//                    stack.push(new Frame<>(prev.n - 2, 0, 3));
+//                }
+//                case 3 -> {
+//                    Frame<Integer> y = stack.pop();
+//                    Frame<Integer> prev = stack.peek();
+//                    prev.result = prev.x + y.result;
+//                    prev.branch = prev.returnBranch;
+//                }
+//                case 4 -> {
+//                    return curr.result;
+//                }
+//            }
         }
         return 1;
     }

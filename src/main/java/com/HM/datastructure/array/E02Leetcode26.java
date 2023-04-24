@@ -28,6 +28,6 @@ public class E02Leetcode26 {
         int[] nums = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
         int len = new E02Leetcode26().removeDuplicates(nums);
         System.out.println(len == 5);
-        System.out.println(Arrays.equals(new int[]{0, 1, 2, 3, 4}, 0, len, nums, 0, len));
+//        System.out.println(Arrays.equals(new int[]{0, 1, 2, 3, 4}, 0, len, nums, 0, len));
     }
 }

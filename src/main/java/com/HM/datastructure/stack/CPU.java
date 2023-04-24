@@ -14,45 +14,45 @@ public class CPU {
 
     public static void main(String[] args) {
         stack.push(new Frame(-1));
-        while (!stack.isEmpty()) {
-            switch (pc) {
-                case 1 -> {
-                    System.out.println("main1");
-                    pc++;
-                }
-                case 2 -> {
-                    System.out.println("main2");
-                    pc++;
-                }
-                case 3 -> {
-                    stack.push(new Frame(pc + 1));
-                    pc = 100;
-                }
-                case 4 -> {
-                    stack.push(new Frame(pc + 1));
-                    pc = 200;
-                }
-                case 5 -> {
-                    System.out.println("main3");
-                    pc = stack.pop().exit;
-                }
-                case 100 -> {
-                    System.out.println("method1");
-                    stack.push(new Frame(pc + 1));
-                    pc = 300;
-                }
-                case 101 -> {
-                    pc = stack.pop().exit;
-                }
-                case 200 -> {
-                    System.out.println("method2");
-                    pc = stack.pop().exit;
-                }
-                case 300 -> {
-                    System.out.println("method3");
-                    pc = stack.pop().exit;
-                }
-            }
-        }
+//        while (!stack.isEmpty()) {
+//            switch (pc) {
+//                case 1 -> {
+//                    System.out.println("main1");
+//                    pc++;
+//                }
+//                case 2 -> {
+//                    System.out.println("main2");
+//                    pc++;
+//                }
+//                case 3 -> {
+//                    stack.push(new Frame(pc + 1));
+//                    pc = 100;
+//                }
+//                case 4 -> {
+//                    stack.push(new Frame(pc + 1));
+//                    pc = 200;
+//                }
+//                case 5 -> {
+//                    System.out.println("main3");
+//                    pc = stack.pop().exit;
+//                }
+//                case 100 -> {
+//                    System.out.println("method1");
+//                    stack.push(new Frame(pc + 1));
+//                    pc = 300;
+//                }
+//                case 101 -> {
+//                    pc = stack.pop().exit;
+//                }
+//                case 200 -> {
+//                    System.out.println("method2");
+//                    pc = stack.pop().exit;
+//                }
+//                case 300 -> {
+//                    System.out.println("method3");
+//                    pc = stack.pop().exit;
+//                }
+//            }
+//        }
     }
 }

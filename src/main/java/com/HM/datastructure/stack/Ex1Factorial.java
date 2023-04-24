@@ -30,29 +30,29 @@ public class Ex1Factorial {
     public static int f(int n) {
         ArrayStack<Frame<Integer>> stack = new ArrayStack<>(n);
         stack.push(new Frame<>(n, 0, 3));
-        while (!stack.isEmpty()) {
-            Frame<Integer> curr = stack.peek();
-            switch (curr.branch) {
-                case 0 -> {
-                    if (curr.n == 1) {
-                        curr.result = 1;
-                        curr.branch = curr.returnBranch;
-                    } else {
-                        stack.push(new Frame<>(curr.n - 1, 0, 1));
-                    }
-                }
-                case 1 -> {
-                    Frame<Integer> x = stack.pop();
-                    System.out.println(x);
-                    Frame<Integer> prev = stack.peek();
-                    prev.result = prev.n * x.result;
-                    prev.branch = prev.returnBranch;
-                }
-                default -> {
-                    return curr.result;
-                }
-            }
-        }
+//        while (!stack.isEmpty()) {
+//            Frame<Integer> curr = stack.peek();
+//            switch (curr.branch) {
+//                case 0 -> {
+//                    if (curr.n == 1) {
+//                        curr.result = 1;
+//                        curr.branch = curr.returnBranch;
+//                    } else {
+//                        stack.push(new Frame<>(curr.n - 1, 0, 1));
+//                    }
+//                }
+//                case 1 -> {
+//                    Frame<Integer> x = stack.pop();
+//                    System.out.println(x);
+//                    Frame<Integer> prev = stack.peek();
+//                    prev.result = prev.n * x.result;
+//                    prev.branch = prev.returnBranch;
+//                }
+//                default -> {
+//                    return curr.result;
+//                }
+//            }
+//        }
         return -1; // 不会执行到这儿
     }
 

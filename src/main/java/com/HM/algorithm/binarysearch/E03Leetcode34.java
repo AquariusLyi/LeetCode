@@ -36,7 +36,6 @@ public class E03Leetcode34 {
             return new int[]{x, right(a, target)};
         }
     }
-
     public int left(int[] a, int target) {
         int i = 0, j = a.length - 1;
         int candidate = -1;

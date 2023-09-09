@@ -14,17 +14,17 @@ package com.HM.algorithm.binarysearch;
  * 输入：nums = [5,7,7,8,8,10], target = 8
  * 输出：[3,4]
  * 示例 2：
- *
+ * <p>
  * 输入：nums = [5,7,7,8,8,10], target = 6
  * 输出：[-1,-1]
  * 示例 3：
- *
+ * <p>
  * 输入：nums = [], target = 0
  * 输出：[-1,-1]
- *
+ * <p>
  *
  * 来源：力扣（LeetCode）
- * 链接：https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array
+ * 链接：<a href="https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array">git地址</a>
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class E03Leetcode34 {

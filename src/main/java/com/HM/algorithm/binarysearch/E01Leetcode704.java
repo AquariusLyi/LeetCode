@@ -1,5 +1,7 @@
 package com.HM.algorithm.binarysearch;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * 给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target  ，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -1。
  *
@@ -22,7 +24,7 @@ package com.HM.algorithm.binarysearch;
 public class E01Leetcode704 {
 
     // 平衡版
-    public int search1(int[] a, int target) {
+    public int search1(int @NotNull [] a, int target) {
         int i = 0, j = a.length;
         while (1 < j - i) {
             int m = (i + j) >>> 1;
@@ -36,7 +38,7 @@ public class E01Leetcode704 {
     }
 
     // 改进版
-    public int search2(int[] a, int target) {
+    public int search2(int @NotNull [] a, int target) {
         int i = 0, j = a.length;             // 1
         while (i < j) {                      // 3
             int m = (i + j) >>> 1;
@@ -52,7 +54,7 @@ public class E01Leetcode704 {
     }
 
     // 基础版
-    public int search3(int[] a, int target) {
+    public int search3(int @NotNull [] a, int target) {
         int i = 0, j = a.length - 1;
         while (i <= j) {
             int m = (i + j) >>> 1;
